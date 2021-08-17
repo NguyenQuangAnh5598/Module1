@@ -1,0 +1,27 @@
+body {
+    padding: 50px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+h1{
+    color: blue;
+}
+#tr2 {
+    background-color: #f39966;
+}
+#tb1 {
+    color: #6969e3;
+}
+#th1 {
+    background-color: #f8d383;
+}
+#th2 {
+    background-color: #f8d383;
+}
+#th3 {
+    background-color: #f8d383;
+}
+
