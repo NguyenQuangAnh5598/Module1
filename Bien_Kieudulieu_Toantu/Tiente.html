@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+<form>
+    <table>
+        <tr>
+            <th>Amount</th>
+            <th>From Curency</th>
+            <th>To Curency</th>
+            <th></th>
+        </tr>
+        <tr>
+            <td><input id="amount" type="text" name="số tiền"/></td>
+            <td>
+                <select id="From">
+                    <option value="1">VNĐ</option>
+                    <option value="23000">USD</option>
+                </select>
+            </td>
+            <td>
+                <select id="To">
+                    <option value="1">VNĐ</option>
+                    <option value="23000">USD</option>
+
+                </select>
+            </td>
+            <td><input type="button" value="Convert" onclick="Tiente()"/> </td>
+        </tr>
+    </table>
+    <br>
+    <p id="a"></p>
+
+
+</form>
+<script src="Tiente.js"></script>
+</body>
+</html>
