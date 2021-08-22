@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Số Cũ
+<input type="text" id="socu" placeholder="Nhập số điện"/><br><br>
+Số Mới
+<input type="text" id="somoi" placeholder="Nhập số điện"/><br><br>
+<input type="button" value="Nhập" onclick="tiendien()"/><br><br>
+<p id="tien"></p>
+<script>
+    function tiendien() {
+        let cu = document.getElementById('socu').value;
+        cu = parseFloat(cu);
+        let moi = document.getElementById('somoi').value;
+        moi = parseFloat(moi);
+        let kwh = moi - cu;
+        if (kwh>0 && kwh<51){
+            document.getElementById('tien').innerText='Tiền điện là: ' + (kwh*1673)+'VNĐ';
+        }else {
+            if (kwh<101) {
+                document.getElementById('tien').innerText='Tiền điện là: ' + (kwh*1734)+'VNĐ';
+            }
+            else {
+                if (kwh<201) {
+                    document.getElementById('tien').innerText='Tiền điện là: ' + (kwh*2014)+'VNĐ';
+                }
+                else {
+                    if (kwh<301) {
+                        document.getElementById('tien').innerText='Tiền điện là: ' + (kwh*2536)+'VNĐ';
+                    }
+                    else {
+                        if (kwh<401) {
+                            document.getElementById('tien').innerText='Tiền điện là: ' + (kwh*2834)+'VNĐ';
+                        }
+                        else {
+                            document.getElementById('tien').innerText='Tiền điện là: ' + (kwh*2927)+'VNĐ';
+                        }
+                    }
+                }
+            }
+        }
+    }
+</script>
+
+</body>
+</html>

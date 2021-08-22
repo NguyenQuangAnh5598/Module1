@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Số ngày công
+<input type="text" id="ngay"/>
+<select id="bac">
+    <option>-Chọn bậc lương-</option>
+    <option value="A">A</option>
+    <option value="B">B</option>
+    <option value="C">C</option>
+    <option value="D">D</option>
+</select>
+<input type="button" value="Nhập" onclick="luong()"/><br><br>
+<p id="luong"></p>
+<script>
+    function luong(){
+        let a = document.getElementById('ngay').value;
+        a = parseInt(a);
+        let b = document.getElementById('bac').value;
+        switch (b) {
+            case 'A' :
+                document.getElementById('luong').innerText='Lương nhận được là : ' + (5000000*a/22)+'.VNĐ';
+                break;
+            case 'B' :
+                document.getElementById('luong').innerText='Lương nhận được là : ' + (6000000*a/23)+'.VNĐ';
+                break;
+            case 'C' :
+                document.getElementById('luong').innerText='Lương nhận được là : ' + (8000000*a/23)+'.VNĐ';
+                break;
+            case 'D' :
+                document.getElementById('luong').innerText='Lương nhận được là : ' + (10000000*a/23)+'.VNĐ';
+                break;
+        }
+    }
+</script>
+
+</body>
+</html>
