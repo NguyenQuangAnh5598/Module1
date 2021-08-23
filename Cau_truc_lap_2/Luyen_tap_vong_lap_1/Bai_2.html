@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let temperature = prompt('NHập nhiệt độ hiện tại vào đây');
+    temperature = parseInt(temperature);
+    if (temperature >= 100){
+        document.write('Nóng quá,giảm nhiệt độ đi');
+    }
+    else {
+        if(temperature < 20){
+            document.write('Lạnh ghê, tăng nhiệt độ lên coi');
+        }
+        else {
+            temperature= prompt('Ổn rồi bạn ơi!!')
+        }
+    }
+</script>
+</body>
+</html>

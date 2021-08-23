@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let sanpham= prompt('Nhập số lượng sản phẩm đã bán');
+  sanpham= parseInt(sanpham);
+  if (sanpham > 5) {
+    if (sanpham > 10) {
+      if (sanpham > 15) {
+        document.write('Hoa hồng nhận được là: '+ (sanpham* 50000* 15/100 + 'VNĐ'));
+      } else {
+          document.write('Hoa hồng nhận được là: ' + (sanpham* 50000* 10/100+ 'VNĐ'));
+      }
+    } else {
+        document.write('Hoa hồng nhận được là: ' + (sanpham* 50000 * 5/100+ 'VNĐ'));
+    }
+  }else{
+    document.write('Không làm mà đòi có ăn');
+  }
+</script>
+</body>
+</html>

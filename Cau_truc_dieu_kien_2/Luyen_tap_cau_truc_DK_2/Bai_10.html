@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = confirm('Bạn có phải hộ gia đình không');
+    let kW = prompt('Nhập số điện đã tiêu thụ vào đây');
+    kW = parseFloat(kW);
+
+    
+    if(a == true ) {
+        document.write('Tiền điện cần trả : ' + (kW * 1500)+'VNĐ');
+    }
+    else {
+        document.write('Tiền điện cần trả : ' + (kW * 3000) + 'VNĐ');
+    }
+</script>
+</body>
+</html>

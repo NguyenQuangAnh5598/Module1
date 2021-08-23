@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //Bài 1
+
+    let C = prompt('Nhập nhiệt độ(độ C)');
+    C=parseFloat(C);
+    let F = (C * 9)/5 +32;
+    document.write('Nhiệt độ là :' + F+'độ F');
+    document.write("<br>");
+    document.write("<br>");
+
+    //Bài 2
+    let m = prompt('Nhập chiều dài vào đây(m)');
+    m = parseFloat(m);
+    let ft = m * 3.2808;
+    document.write('Chiều dài là: ' + ft +'ft');
+    document.write('<br>');
+    document.write('<br>');
+
+    //Bài 3
+    let a = prompt('Nhập cạnh hình vuông(m)');
+    a = parseFloat(a);
+    let dientich = a * a;
+    document.write('Diện tích hình vuông = ' + dientich +'m²');
+    document.write('<br>');
+    document.write('<br>');
+
+    //Bài 4
+    let b = prompt('Nhập chiều dài hình chữ nhật(m)');
+    a = parseFloat(b);
+    let c = prompt('Nhập chiều rộng hình chữ nhật(m)');
+    a = parseFloat(c);
+    let dientichchunhat = b * c;
+    document.write('Diện tích hình chữ nhật = ' + dientichchunhat +'m²');
+    document.write('<br>');
+    document.write('<br>');
+
+    //Bài 5
+    let d = prompt('Nhập cạnh kề 1 hình tam giác vuông(m)');
+    d = parseFloat(d);
+    let e = prompt('Nhập cạnh kề 2 hình tam giác vuông(m)');
+    e = parseFloat(e);
+    let f = Math.sqrt(d**2 +e**2);
+    let Stamgiacvuong = Math.sqrt((d+e+f)*(d+e-f)*(e+f-d)*(f+d-e))/4;
+    document.write('Diện tích tam giác vuông = ' +Stamgiacvuong+'m²' );
+
+
+
+</script>
+
+</body>
+</html>

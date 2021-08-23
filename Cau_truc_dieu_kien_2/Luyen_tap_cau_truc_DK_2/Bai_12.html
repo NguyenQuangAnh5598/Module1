@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let money = prompt('Nhập số tiền đã vay');
+    money =parseFloat(money);
+    let lai = prompt('Nhập lãi xuất');
+    lai =parseFloat(lai);
+    let month = prompt('Đã vay bao nhiêu tháng');
+    month =parseInt(month);
+    let tra = money * Math.pow((1+lai/month),month *month);
+document.write('Số tiền phải trả là : ' + tra +'.VNĐ');
+</script>
+
+</body>
+</html>

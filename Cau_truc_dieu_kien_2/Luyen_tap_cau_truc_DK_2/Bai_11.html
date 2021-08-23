@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+let luong = prompt('Nhập lương vào đây(VNĐ)');
+luong = parseFloat(luong);
+
+if(luong>=15000000) {
+    document.write('Thuế TNCN = ' + (luong * 15 / 100)+'VNĐ');
+}
+else {
+    if( luong>=1000000) {
+        document.write('Thuế TNCN = ' + (luong * 10 / 100)+'VNĐ');
+    }
+    else {
+        if(luong>=5000000) {
+            document.write('Thuế TNCN = ' + (luong * 5 / 100)+'VNĐ');
+        }
+        else{
+            document.write('Thuế TNCN = 0');
+        }
+    }
+}
+
+</script>
+</body>
+</html>

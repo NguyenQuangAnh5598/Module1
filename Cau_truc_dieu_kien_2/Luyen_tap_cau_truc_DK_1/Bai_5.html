@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let kiemtra = prompt("Nhập điểm bài kiểm tra");
+    a = parseInt(kiemtra)
+    let giuaky = prompt("Nhập điểm thi giữa kì");
+    b = parseInt(giuaky);
+    let cuoiky = prompt("Nhập điểm thi cuối kì");
+    c = parseInt(cuoiky);
+    let tong=(a + b + c)/3;
+
+    if (tong <= 10) {
+        if (tong <= 7) {
+            if (tong < 5) {
+                document.write('Loại Trung Bình');
+            } else {
+                document.write('Loại Khá');
+            }
+        } else {
+            document.write('Loại Giỏi');
+        }
+    }else{
+                document.write('Sai rồi!Nhập lại');
+            }
+</script>
+
+
+
+</body>
+</html>
