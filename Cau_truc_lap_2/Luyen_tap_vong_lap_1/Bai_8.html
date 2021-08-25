@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="button" value="Chơi" onclick="doan()"/>
+<script>
+    function doan() {
+        let n=0;
+        let below = prompt('Nhập khoảng dưới vào đây');
+        let above = prompt('Nhập khoảng trên vào đây');
+        below = parseInt(below);
+        above = parseInt(above);
+        let count = Math.floor(Math.random() * (above - below)) + below;
+        count = parseInt(count);
+        let num = prompt('Nhập số bạn đoán vào đây');
+        num = parseInt(num);
+        while (num != count && n<3) {
+            //Cách 2
+            // if (n==3){
+            //     break;
+            // }
+            n++;
+            if (num > count) {
+                alert('Số to quá rồi, nhập lại đi');
+            } else {
+                alert('Số nhỏ quá rồi, nhập lại đi');
+            }
+
+            num = prompt('Đoán lại');
+            num = parseInt(num);
+        }
+        if (num==count){
+            alert('Đúng rồi, là số ' + count + ' đó');
+        }
+        else {
+            alert('Thua rồi');
+        }
+
+    }
+</script>
+
+</body>
+</html>

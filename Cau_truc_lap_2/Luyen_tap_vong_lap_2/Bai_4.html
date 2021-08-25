@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let length = prompt('Nhập số sao ở chiều dài');
+    let height = prompt('Nhập số sao ở chiều cao');
+    length =parseInt(length);
+    height =parseInt(height);
+    for ( let i=1;i<=length;i++){
+            document.write('*');
+        }
+        document.write('<br>');
+    for (let i=1;i<=height;i++) {
+        for (let k=1;k<=length;k++) {
+            if (k==1 || k%length==0) {
+                document.write('*');
+            }
+            else {
+                document.write('&ensp;');
+            }
+        }
+        document.write('<br>');
+    }
+    for (let i=1;i<= length;i++) {
+        document.write('*');
+    }
+</script>
+</body>
+</html>

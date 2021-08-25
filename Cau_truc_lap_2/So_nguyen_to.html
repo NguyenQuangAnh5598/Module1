@@ -5,12 +5,30 @@
     <title>Title</title>
 </head>
 <body>
+<input type="button" onclick="demo1()" value="Nhấn in">
 <script>
-    let num = prompt('Nhập 1 số vào đây');
-    let count = 0;
-    let N = 2;
+    function checkprime(n){
+        if (n < 2) return false;
+        else {
+            for (let i = 2; i <= Math.sqrt(n); i++) {
+                if (n % i === 0) {
+                    return false;
+                }
+            }
+        }return true;
+    }
 
-    if 
+    function demo1() {
+        let num = prompt('Cần in ra bao nhiêu số nguyên tố');
+           let i = 0;
+        let count = 0;
+        while (count < num) {
+            if (checkprime(i)) {
+                document.write(i + '<br>');
+                count++;
+            }
+            i++;
+        }
     }
 </script>
 
