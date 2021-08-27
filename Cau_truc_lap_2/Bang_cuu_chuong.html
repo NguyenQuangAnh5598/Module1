@@ -7,18 +7,18 @@
 <body>
 <script language="javascript">
   let cc, i, j;
-  cc = "<table border='1' width='300' cellspacing='0' cellpadding='3'>";
-  j = 2;
-  i = 1;
-  while (i <= 9) {
+  cc = "<table border='1' width='600' cellspacing='0' cellpadding='3'>";
+  i = 2;
+  j = 1;
+  while (j <= 9) {
     cc = cc + "<tr>";
-    while (j <= 9 ) {
-      cc = cc + "<td>" + j +'x' + i +'='+ (j*i) + "</td>";
-      j++;
+    while (i <= 9 ) {
+      cc = cc + "<td>" + i +' x ' + j +' = '+ (i*j) + "</td>";
+      i++;
     }
     cc= cc + "</tr>";
-    j = 2;
-    i++;
+    i = 2;
+    j++;
   }
   cc = cc + "</table>";
   document.write(cc);

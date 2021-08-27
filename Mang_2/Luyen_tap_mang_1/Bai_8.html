@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let num=[];
+    n = prompt('Mời nhập số lượng số nguyên');
+    n= parseInt(n)
+    for (let i=0; i < n;i++) {
+        let x = prompt('Nhập số nguyên muốn cho tại vị trí ' + i + ' vào đây');
+        x = parseInt(x);
+        num[i] = x;
+    }
+    document.write('Mảng trước khi sắp xếp: '+ num + '<br>');
+
+    let num2= [];
+    let count = 0;
+    for (let i=0;i<num.length;i++) {
+        let max = 0;
+        for(let j = 0;j< num.length;j++) {
+            if (num[j] > max) {
+                max = num[j];
+                count = j;
+            }
+        }
+        num[count] = 0;
+        num2[i] = max;
+    }
+    document.write('Mảng sau khi sắp xếp '+ num2);
+
+</script>
+
+</body>
+</html>

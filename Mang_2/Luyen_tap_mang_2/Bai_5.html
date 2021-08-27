@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let chuoi1 = prompt('Nhập chuỗi 1 vào đây');
+    let chuoi2 = prompt('Nhập chuỗi 2 vào dây');
+    let count =0;
+    if (chuoi1.length == chuoi2.length) {
+        for (let i=0;i<chuoi1.length;i++) {
+            if (chuoi1[i] == chuoi2[i]){
+                count++
+            }
+        }
+        if (count == chuoi1.length) {
+            document.write('Chuỗi 1 giống chuỗi 2');
+        }
+        else {
+            document.write('Chuỗi 1 không giống chuỗi 2');
+        }
+    }
+    else {
+        document.write('Chuỗi 1 không giống chuỗi 2');
+    }
+
+
+</script>
+</body>
+</html>

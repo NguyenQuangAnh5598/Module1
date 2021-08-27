@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let english = ['one','two','three','four','five','function'];
+  let tiengviet = ['một','hai','ba','bốn','năm','hàm'];
+  let search = prompt('Nhập từ tiếng anh cần dịch');
+  let index=0;
+  for (let i=0;i<english.length;i++) {
+      if (english[i] === search){
+          document.write('Nghĩa của từ '+ english[i] + ' là ' + tiengviet[i]);
+          index = 1;
+      }
+  }
+  if (index === 0) {
+      alert('không có nghĩa từ cần tìm trong từ điển');
+  }
+</script>
+</body>
+</html>

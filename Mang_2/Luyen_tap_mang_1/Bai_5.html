@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let num=[];
+    n = prompt('Mời nhập số lượng số nguyên');
+    n= parseInt(n)
+    let count = 0;
+    for (let i=0; i < n;i++) {
+        let x = prompt('Nhập số nguyên muốn cho tại vị trí ' + i + ' vào đây');
+        x = parseInt(x);
+        num[i] = x;
+        if (num[i]<0) {
+            count++;
+        }
+    }
+    document.write('Vậy mảng có ' + count +' số nguyên âm');
+
+
+</script>
+</body>
+</html>

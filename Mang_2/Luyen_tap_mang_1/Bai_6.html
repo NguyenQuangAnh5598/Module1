@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let num=[];
+    n = prompt('Mời nhập số lượng số nguyên');
+    n= parseInt(n)
+    for (let i=0; i < n;i++) {
+        let x = prompt('Nhập số nguyên muốn cho tại vị trí ' + i + ' vào đây');
+        x = parseInt(x);
+        num[i] = x;
+    }
+    let V = prompt('Nhập 1 số vào đây');
+    V = parseInt(V);
+    let a = 0;
+    for (let i=0 ; i < num.length;i++) {
+        if (num[i] === V) {
+            document.write(V + ' is in the array!');
+               a = 1;
+        }
+    }
+    if (a!=1){
+
+        document.write(V + ' is not in the array!')
+    }
+
+</script>
+</body>
+</html>
