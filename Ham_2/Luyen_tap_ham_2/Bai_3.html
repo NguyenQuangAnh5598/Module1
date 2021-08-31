@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let num = prompt('Nhập 1 số vào đây');
+
+    function countFactorial(number) {
+        number = parseInt(number);
+        if (number == 0 ) {
+            return 1;
+        }
+        let n = 1;
+        for (let i = 1;i <= number;i++) {
+            n *= i;
+        }
+        return n;
+    }
+    alert(countFactorial(num));
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label for="num">Nhập một số vào đây</label>
+<input type="text" id="num" oninput="total(this.value)">
+<p id="number"></p>
+<script>
+    function total(n) {
+        n = parseFloat(n);
+        n = n + 1;
+        document.getElementById('number').innerText= 'New number: ' + n;
+    }
+</script>
+</body>
+</html>

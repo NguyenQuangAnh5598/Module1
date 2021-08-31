@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let num = [];
+    let n = prompt('Nhập số lượng phần tử muốn nhập vào mảng ');
+
+    function getElement(number) {
+        for (i=0; i < n;i++) {
+            let x = prompt('Nhập số vào mảng ở vị trí ' + i);
+            x = parseInt(x);
+            number[i] = x;
+        }
+        return number;
+    }
+document.write('Mảng khi chưa sửa' + getElement(num));
+
+    function swirtchNum(nu) {
+        let first = 0;
+        let last = nu.length-1;
+        while (first < last) {
+            let a = nu[first];
+            nu[first] = nu[last];
+            nu[last] = a;
+            first++;
+            last--;
+        }
+        return nu;
+    }
+    document.write('Hàm sau khi sửa ' + swirtchNum(num));
+</script>
+
+</body>
+</html>

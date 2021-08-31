@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = [1,2,3,3,2,1]
+    function isPalindrome(str){
+        let n = str.length;
+        for (let i = 0; i < n/2; i++) {
+            if (str[i] != str[n-1-i]) return false;
+        }
+        return true;
+    }
+    alert(isPalindrome(a));
+
+// Cách 2
+//     function isPalindrome1(str){
+//         let n = str.length;
+//         let first=0;
+//         let last = n-1;
+//         while (first<last){
+//             if (str[first]!= str[last]) return false;
+//             first++;
+//             last--;
+//         }
+//         return true;
+//
+//     }
+
+    // cách 3 : Đệ Qi
+    // function isPalindrome(str) {
+    //     if (str.length === 0 || str.length === 1) return true;
+    //     if (str.charAt(0) === str.charAt(str.length - 1)) return isPalindrome(str.substring(1, str.length - 1));
+    //     return false;
+    // }
+
+</script>
+</body>
+</html>

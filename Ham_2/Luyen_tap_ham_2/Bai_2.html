@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let r = prompt('Nhập bán kính hình tròn')
+    alert(getPerimeter(r));
+    alert(getArea(r));
+  function getPerimeter(num) {
+      num = parseFloat(num);
+      let n = 2*Math.PI*num;
+      return n;
+  }
+
+  function getArea(num) {
+      num = parseFloat(num);
+      let m = Math.PI*num*num;
+      return m;
+  }
+
+</script>
+
+</body>
+</html>

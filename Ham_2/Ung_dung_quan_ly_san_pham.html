@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<style>
+    table tr td {
+        border: #ff0000 1px solid;
+    }
+</style>
+<body>
+<h1>List of products</h1>
+<label for="newP"></label>
+<input id="newP" placeholder="NewProduct">
+<button onclick="createNewProduct()">Create</button>
+<p id="sumOfProduct"></p>
+<table>
+    <tr>
+        <td>Products</td>
+        <td>Fix</td>
+        <td>Delete</td>
+    </tr>
+    <tbody id="products">
+    <tr>
+        <td>Macbook 2020</td>
+        <td>Sua</td>
+        <td>Xoa</td>
+    </tr>
+    <tr>
+        <td>Dell 3570</td>
+        <td>Sua</td>
+        <td><button onclick="deleteProduct()">xoa</button></td>
+    </tr>
+    </tbody>
+
+
+</table>
+
+<script src="Ung_dung_quan_ly_san_pham.js"></script>
+</body>
+</html>

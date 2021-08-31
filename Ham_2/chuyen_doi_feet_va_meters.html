@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label for="feet">Chuyển từ Feet sang Meter</label><br>
+<input type="number" id="feet" oninput="feetToMeter(this.value)" ><br><br>
+<p id="me"></p>
+<label for="meter">Chuyển từ Meter sang Feet</label><br>
+<input type="number" id="meter" oninput="meterToFeet(this.value)"><br><br>
+<p id="fe"></p>
+<script>
+    function feetToMeter(feet) {
+        feet = parseFloat(feet);
+       let meter = 0.305 * feet;
+        document.getElementById('me').innerText = meter + 'meter';
+    }
+
+    function meterToFeet(meter) {
+        meter = parseFloat(meter);
+        let feet = 3.279 * meter;
+        document.getElementById('fe').innerText = feet + 'feet';
+    }
+</script>
+
+</body>
+</html>
