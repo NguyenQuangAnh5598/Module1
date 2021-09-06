@@ -1,4 +1,10 @@
-let productList=["Iphone 11", "Iphone Xsmax", "Iphone 8", "Iphone Xs", "Iphone 8 plus"];
+// let productList=["Iphone 11", "Iphone Xsmax", "Iphone 8", "Iphone Xs", "Iphone 8 plus"];
+let productList = [
+    new Product("Iphone Xsmax",15,"Hàng cũ"),
+    new Product("Iphone 11promax",20,"Hàng cũ"),
+    new Product("Iphone 12promax",25,"Hàng mới")
+];
+
 //ten ham: showAllProduct
 //ds tham so: khong co:
 //dl tra ve: khong co
@@ -6,11 +12,12 @@ let productList=["Iphone 11", "Iphone Xsmax", "Iphone 8", "Iphone Xs", "Iphone 8
 function showAllProduct(){
     let content="";
     for (let i = 0; i < productList.length; i++) {
-
         // demo+= 'so tiep theo la '+ i;
         // demo+= 'So tiep theo la '+ i + 'don vi';
         content += '<tr>\n' +
-            '            <td>'+productList[i]+'</td>\n' +
+            '            <td>'+productList[i].getName() + '</td>\n' +
+            '            <td>'+productList[i].getPrice() + '</td>\n' +
+            '            <td>'+productList[i].getDescription() + '</td>\n' +
             '            <td><button onclick="editProduct('+i+')">Sửa</button></td>\n' +
             '            <td><button onclick="deleteProduct('+i+')">Delete</button></td>\n' +
             '        </tr>'
@@ -28,7 +35,10 @@ showAllProduct();
 // hiển thị lại dữ liệu
 function createNewProduct() {
     // let newP = prompt("Moi ban nhap ten sp moi");
-    let newP = document.getElementById("newP").value;
+    let newName = document.getElementById("newName").value;
+    let newPrice = document.getElementById("newPrice").value;
+    let newDescription = document.getElementById("newDescription").value;
+    let newP = new Product(newName,newPrice,newDescription);
     productList.push(newP);
     showAllProduct();
     document.getElementById("newP").value = "";

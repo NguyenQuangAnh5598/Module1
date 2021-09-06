@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Temperature {
+        constructor(C) {
+            this.C = C;
+        }
+        getCtoF() {
+            return ((this.C)*9/5+32);
+    }
+        getCtoK() {
+            return (this.C + 273.15)
+    }
+    }
+    let temperature = new Temperature(32);
+    document.write('Chuyển từ độ C sang độ F: ' + temperature.getCtoF() +'<br>');
+    document.write('Chuyển từ độ C sang độ K: ' + temperature.getCtoK() + '<br>');
+</script>
+
+</body>
+</html>
